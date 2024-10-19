@@ -136,11 +136,11 @@ print(f"""
 {c}\__ \ ||  __/ (_| |/ __/ (__| | | (_| | (__|   < {r}
 {c}|___/\__\___|\__, |_____\___|_|  \__,_|\___|_|\_|{r}
 {c}              |___/                              {r}
-{p}[{b}*{p}] Program : {b}Steg2crack{r}
+{p}[{b}*{p}] Program   : {b}Steg2crack{r}
 {p}[{b}*{p}] Deskripsi : {b}Program Python untuk meng-crack file stego{r}
-{p}[{b}*{p}] Pembuat : {b}fixploit03{r}
-{p}[{b}*{p}] Github : {b}https://github.com/fixploit03/Steg2crack/{r}
-{p}[{b}*{p}] Team : {b}ArSec (Arjuna Security){r}
+{p}[{b}*{p}] Pembuat   : {b}fixploit03{r}
+{p}[{b}*{p}] Github    : {b}https://github.com/fixploit03/Steg2crack/{r}
+{p}[{b}*{p}] Team      : {b}ArSec (Arjuna Security){r}
 """)
 
 # Meminta nama file stego dari pengguna
