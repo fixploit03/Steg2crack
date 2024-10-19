@@ -224,7 +224,7 @@ try:
                     waktu_akhir = datetime.now()
                     print(f"{p}[{h}+{p}] Kata sandi ditemukan : {h}{kata_sandi}{r}") 
                     if os.path.isfile(nama_file_tersembunyi):
-                        print(f"{p}[{h}+{p}] File yang disembunyikan: {h}{nama_file_tersembunyi}{r}") 
+                        print(f"{p}[{h}+{p}] File yang disembunyikan : {h}{nama_file_tersembunyi}{r}") 
                         try:
                             shutil.copy(nama_file_tersembunyi, folder)
                         except Exception as e:
