@@ -226,7 +226,7 @@ try:
                     if os.path.isfile(nama_file_tersembunyi):
                         print(f"{p}[{h}+{p}] File yang disembunyikan: {h}{nama_file_tersembunyi}{r}") 
                         try:
-                            shutil.move(nama_file_tersembunyi, folder)
+                            shutil.copy(nama_file_tersembunyi, folder)
                         except Exception as e:
                             print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
                             exit(1)
