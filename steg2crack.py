@@ -173,6 +173,23 @@ while True:
         print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
         exit(1)
 
+while True:
+    try:
+        folder = input(f"{p}[{b}#{p}] Masukkan nama folder untuk menyimpan hasil cracking: ")
+        if not folder:
+            print(f"{p}[{m}-{p}] Folder tidak boleh kosong.{r}")
+            continue
+        if not os.path.isdir(folder):
+            print(f"{p}[{m}-{p}] Folder '{folder}' tidak ditemukan.{r}")
+            continue 
+        break
+    except KeyboardInterrupt:
+        print(f"\n{p}[{m}-{p}] Program dihentikan oleh pengguna.{r}")
+        exit(1)
+    except Exception as e:
+        print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
+        exit(1)
+
 print("")
 
 kata_sandi_ditemukan = False
