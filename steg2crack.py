@@ -33,8 +33,9 @@ import os
 import re
 import subprocess           
 import time
+import shutil
 import platform
-from datetime import datetime 
+from datetime import datetime
 
 ## Variabel warna
 m = "\033[31m" # Merah
@@ -219,6 +220,11 @@ try:
                     print(f"{p}[{h}+{p}] Kata sandi ditemukan : {h}{kata_sandi}{r}") 
                     if os.path.isfile(nama_file_tersembunyi):
                         print(f"{p}[{h}+{p}] File yang disembunyikan: {h}{nama_file_tersembunyi}{r}") 
+                        try:
+                            shutil.move(nama_file_tersembunyi, folder)
+                        except Exception as e:
+                            print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
+                            exit(1)
                     print(f"\n{p}[{b}*{p}] Berakhir pada : {b}{waktu_akhir.strftime('%d-%m-%Y %H:%M:%S')}{r}")
                     kata_sandi_ditemukan = True 
                     break
