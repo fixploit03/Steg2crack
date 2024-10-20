@@ -153,6 +153,10 @@ while True:
         if not os.path.isfile(file_stego):
             print(f"{p}[{m}-{p}] File stego '{file_stego}' tidak ditemukan.{r}")
             continue
+        ekstensi_file_stego = ["jpg", "jpeg", ".wav", ".au"]
+        if not file_stego.endswith(tuple(ekstensi_file_stego)):
+            print(f"[-] File '{file_stego}' bukan file stego.")
+            continue
         break
     except KeyboardInterrupt:
         print(f"\n{p}[{m}-{p}] Program dihentikan oleh pengguna.{r}")
