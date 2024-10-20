@@ -155,7 +155,7 @@ while True:
             continue
         ekstensi_file_stego = ["jpg", "jpeg", ".wav", ".au"]
         if not file_stego.endswith(tuple(ekstensi_file_stego)):
-            print(f"[-] File '{file_stego}' bukan file stego.")
+            print(f"{p}[{m}-{p}] File '{file_stego}' bukan file stego.{r}")
             continue
         break
     except KeyboardInterrupt:
