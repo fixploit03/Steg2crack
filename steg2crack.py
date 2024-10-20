@@ -67,7 +67,7 @@ print(f"""
 {r}
 {p}File stego adalah file yang mengandung informasi atau data yang disembunyikan di dalamnya,{r}
 {p}di mana data tersebut tidak dapat dilihat secara langsung. Biasanya, data ini disisipkan ke {r}
-{p}dalam file lain, seperti gambar, audio, atau video, menggunakan teknik steganografi{r}
+{p}dalam file lain, seperti gambar, audio, atau video, menggunakan teknik steganografi.{r}
 """)
 
 try:
