@@ -89,19 +89,6 @@ elif sistem_operasi == "Windows":
 
 # Banner cek steghide 
 print(f"""
-{p}                         ,
-{p}  ,-.       _,---._ __  / l
-{p} /  )    .-'       `./ /   l
-{p}(  (   ,'            `/    /|
-{p} \  `-"             .'\   / |
-{p}  `.              ,  \ \ /  |
-{p}   /`.          ,'-`----Y   |
-{p}  (            ;        |   '
-{p}  |  ,-.    ,-'         |  /
-{p}  |  | (   |        {c}Cat {p}| /
-{p}  )  |  \  `.___________|/
-{p}  `--'   `--'
-{r}
 [{b}*{p}] Mengecek Steghide...{r}""")
 time.sleep(3)
 
