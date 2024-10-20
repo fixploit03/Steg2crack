@@ -183,23 +183,6 @@ while True:
         print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
         exit(1)
 
-while True:
-    try:
-        folder = input(f"{p}[{b}#{p}] Masukkan nama folder untuk menyimpan hasil cracking: ")
-        if not folder:
-            print(f"{p}[{m}-{p}] Folder tidak boleh kosong.{r}")
-            continue
-        if not os.path.isdir(folder):
-            print(f"{p}[{m}-{p}] Folder '{folder}' tidak ditemukan.{r}")
-            continue 
-        break
-    except KeyboardInterrupt:
-        print(f"\n{p}[{m}-{p}] Program dihentikan oleh pengguna.{r}")
-        exit(1)
-    except Exception as e:
-        print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
-        exit(1)
-
 print("")
 
 kata_sandi_ditemukan = False
@@ -229,24 +212,6 @@ try:
                     print(f"{p}[{h}+{p}] Kata sandi ditemukan : {h}{kata_sandi}{r}") 
                     if os.path.isfile(nama_file_tersembunyi):
                         print(f"{p}[{h}+{p}] File yang disembunyikan : {h}{nama_file_tersembunyi}{r}") 
-                        cek_apakah_file_sudah_ada = os.path.join(folder, nama_file_tersembunyi)
-                        if not os.path.isfile(cek_apakah_file_sudah_ada):
-                            try:
-                                shutil.copy(nama_file_tersembunyi, folder)
-                            except Exception as e:
-                                print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
-                                exit(1)
-                        else:
-                            try:
-                                os.remove(nama_file_tersembunyi)
-                                try:
-                                    shutil.copy(nama_file_tersembunyi, folder)
-                                except Exception as e:
-                                    print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
-                                    exit(1)
-                            except Exception as e:
-                                print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
-                                exit(1)
                     print(f"\n{p}[{b}*{p}] Berakhir pada : {b}{waktu_akhir.strftime('%d-%m-%Y %H:%M:%S')}{r}")
                     kata_sandi_ditemukan = True 
                     break
