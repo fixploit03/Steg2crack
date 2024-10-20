@@ -147,7 +147,6 @@ print(f"""
 while True:
     try:
         file_stego = input(f"{p}[{b}#{p}] Masukkan nama file stego : ")
-        file_stego = file_stego.strip('"').strip("'")
         if not file_stego:
             print(f"{p}[{m}-{p}] File stego tidak boleh kosong.{r}")
             continue 
