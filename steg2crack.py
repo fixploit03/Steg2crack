@@ -51,10 +51,10 @@ sistem_operasi = platform.system()
 # Android (Termux) & Linux
 if sistem_operasi == "Linux":
     os.system("clear")
-# Windows
-elif sistem_operasi == "Windows":
-    os.system("cls")
-
+else:
+    print(f"{p}[{m}-{p}] Sistem operasi Anda tidak mendukung untuk menjalankan program Steg2crack.{r}")
+    exit(1)
+    
 print(f"""
 {c}Selamat datang di Steg2crack{r}
 {p}----------------------------{r}
@@ -79,12 +79,8 @@ except Exception as e:
     print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
     exit(1)
 
-# Android (Termux) & Linux
-if sistem_operasi == "Linux":
-    os.system("clear")
-# Windows
-elif sistem_operasi == "Windows":
-    os.system("cls")
+# Membersihkan layar terminal
+os.system("clear")
 
 # Banner cek steghide 
 print(f"""
@@ -118,12 +114,7 @@ if hasil_perintah_cek_steghide.returncode == 0:
     except Exception as e:
         print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
         exit(1)
-    # Android (Termux) & Linux
-    if sistem_operasi == "Linux":
-        os.system("clear")
-    # Windows
-    elif sistem_operasi == "Windows":
-        os.system("cls")
+    os.system("clear")
 else:
     print(f"{p}[{m}-{p}] Steghide belum terinstal.{r}")
     exit(1)
