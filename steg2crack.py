@@ -104,6 +104,7 @@ time.sleep(3)
 perintah_cek_steghide = f"steghide --version"
 hasil_perintah_cek_steghide = subprocess.run(perintah_cek_steghide, shell=True, capture_output=True, text=True)
 
+# Kondisi steghide sudah terinstal 
 if hasil_perintah_cek_steghide.returncode == 0:
     print(f"{p}[{h}+{p}] Steghide sudah terinstal.{r}")
     try:
@@ -115,6 +116,7 @@ if hasil_perintah_cek_steghide.returncode == 0:
         print(f"\n{p}[{m}-{p}] Terjadi kesalahan: {e}.{r}")
         exit(1)
     os.system("clear")
+# Kondisi steghide belum terinstal 
 else:
     print(f"{p}[{m}-{p}] Steghide belum terinstal.{r}")
     exit(1)
