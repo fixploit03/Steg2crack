@@ -168,8 +168,7 @@ while True:
         if not os.path.isfile(file_wordlist):
             print(f"{p}[{m}-{p}] File wordlist '{file_wordlist}' tidak ditemukan.{r}")
             continue
-        ekstensi_file_wordlist = [".txt", ".lst", ""]
-        if not any(file_wordlist.endswith(ext) for ext in ekstensi_file_wordlist):
+        if not file_wordlist.endswith(".txt") or file_wordlist.endswith(".lst"):
             print(f"{p}[{m}-{p}] File '{file_wordlist}' bukan file wordlist.{r}")
             continue 
         break
