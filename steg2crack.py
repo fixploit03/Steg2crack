@@ -168,6 +168,7 @@ while True:
         if not os.path.isfile(file_wordlist):
             print(f"{p}[{m}-{p}] File wordlist '{file_wordlist}' tidak ditemukan.{r}")
             continue
+        # ekstensi_file_wordlist = ["txt", "", ""]
         break
     except KeyboardInterrupt:
         print(f"\n{p}[{m}-{p}] Program dihentikan oleh pengguna.{r}")
