@@ -168,6 +168,9 @@ while True:
         if not os.path.isfile(file_wordlist):
             print(f"{p}[{m}-{p}] File wordlist '{file_wordlist}' tidak ditemukan.{r}")
             continue
+        if not file_wordlist.endswith((".txt", ".lst")):
+            print(f"{p}[{m}-{p}] File '{file_wordlist}' bukan file wordlist.{r}")
+            continue
         break
     except KeyboardInterrupt:
         print(f"\n{p}[{m}-{p}] Program dihentikan oleh pengguna.{r}")
