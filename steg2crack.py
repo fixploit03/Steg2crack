@@ -168,7 +168,7 @@ while True:
         if not os.path.isfile(file_wordlist):
             print(f"{p}[{m}-{p}] File wordlist '{file_wordlist}' tidak ditemukan.{r}")
             continue
-        if not file_wordlist.endswith(".txt") and not file_wordlist.endswith(".lst"):
+        if not file_wordlist.endswith(".txt") and not file_wordlist.endswith(".lst") and "." not in os.path.basename(file_wordlist):
             print(f"{p}[{m}-{p}] File '{file_wordlist}' bukan file wordlist.{r}")
             continue 
         break
