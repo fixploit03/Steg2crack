@@ -146,7 +146,7 @@ while True:
         if not os.path.isfile(file_stego):
             print(f"{p}[{m}-{p}] File stego '{file_stego}' tidak ditemukan.{r}")
             continue
-        # ekstensi_file_stego = [".jpg", ".jpeg", ".wav", ".au"]
+        # Cek file stego
         if not file_stego.endswith((".jpg", ".jpeg", ".wav", ".au")):
             print(f"{p}[{m}-{p}] File '{file_stego}' bukan file stego.{r}")
             continue
@@ -168,6 +168,7 @@ while True:
         if not os.path.isfile(file_wordlist):
             print(f"{p}[{m}-{p}] File wordlist '{file_wordlist}' tidak ditemukan.{r}")
             continue
+        # Cek file wordlist
         if not file_wordlist.endswith((".txt", ".lst")):
             print(f"{p}[{m}-{p}] File '{file_wordlist}' bukan file wordlist.{r}")
             continue
