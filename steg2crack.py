@@ -146,7 +146,7 @@ while True:
         if not os.path.isfile(file_stego):
             print(f"{p}[{m}-{p}] File stego '{file_stego}' tidak ditemukan.{r}")
             continue
-        ekstensi_file_stego = ["jpg", "jpeg", ".wav", ".au"]
+        ekstensi_file_stego = [".jpg", ".jpeg", ".wav", ".au"]
         if not file_stego.endswith(tuple(ekstensi_file_stego)):
             print(f"{p}[{m}-{p}] File '{file_stego}' bukan file stego.{r}")
             continue
