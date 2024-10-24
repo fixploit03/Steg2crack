@@ -3,6 +3,12 @@ Steg2crack
 
 Steg2crack adalah program Python sederhana yang dirancang untuk meng-crack file stego menggunakan teknik Dictionary Attack.
 
+Proses instalasi [Linux]
+
+Update repo
+-----------
+$ apt-get update
+
 Kloning
 -------
 https://github.com/fixploit03/Steg2crack.git
